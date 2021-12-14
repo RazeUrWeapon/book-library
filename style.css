@@ -4,6 +4,7 @@
 }
 
 html {
+    background-color:rgb(31, 31, 31);
     font-size: 100%;
     font-family: 'Dosis', sans-serif;
 }
@@ -16,12 +17,19 @@ body {
 }
 
 h1 {
-    margin-bottom: 20px;
+    margin: 20px 0 20px;
+    font-size: 42px;
+    color: whitesmoke;
 }
 
 span {
     font-size: 22px;
     font-weight: 700;
+}
+
+input {
+    width: 22px;
+    height: 22px;
 }
 
 #container {
@@ -48,7 +56,4 @@ span {
 .pages {
     margin-bottom: 5px;
     font-size: 20px;
-}
-
-.title {
 }

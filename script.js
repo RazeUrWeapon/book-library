@@ -33,8 +33,34 @@ function Book(title, author, pages, read) {
 function addBookToLibrary() {
     addNewBook = new Book(title, author, pages, read)
     myLibrary.push(addNewBook)
+    displayEachBook()
 }
 
 function displayEachBook() {
+    for (i = 0; i < myLibrary.length; i++) {
+        const bookCard = document.createElement('div')
+        const titleDiv = documenent.createElement('div')
+        const author = docuement.createElement('div')
+        const read = document.createElement('div')
     
+        bookCard.classList.add('card')
+        titleDiv.classList.add('title')
+        author.classList.add('author')
+        read.classList.add('read')
+
+        titleDiv.innerHTML = '<span>Title: </span>' book.title;
+        bookCard.appendChild(titleDiv)
+    }
+}
+
+function saveForLater(){
+    const bookCard = document.createElement('div')
+    const title = documenent.createElement('div')
+    const author = docuement.createElement('div')
+    const read = document.createElement('div')
+
+    bookCard.classList.add('card')
+    title.classList.add('title')
+    author.classList.add('author')
+    read.classList.add('read')
 }

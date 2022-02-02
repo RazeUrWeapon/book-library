@@ -1,46 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Library</title>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>My Book Library</title>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css" />
-    <script defer src="script.js"></script>
-</head>
-<body>
-    <main>
-    <h1>My Library</h1>
-    <div id="container">
-        <div id="card">
-            <div class="title"><span>Title: </span>Title Goes Here</div>
-            <div class="author"><span>Author: </span>Mr. Author</div>
-            <div class="pages"><span>Pages: </span>299</div>
-            <div class="read"><span>Read: </span><input type="checkbox" id="read-checkbox"></div>
-        </div>
-        <div id="card">
-            <div class="title"><span>Title: </span>Much Longer Title Goes Here</div>
-            <div class="author"><span>Author: </span>Mr. Author</div>
-            <div class="pages"><span>Pages: </span>299</div>
-            <div class="read"><span>Read: </span><input type="checkbox" id="read-checkbox"></div>
-        </div>
-        <div id="card">
-            <div class="title"><span>Title: </span>Longer Title Goes Here</div>
-            <div class="author"><span>Author: </span>Mr. Author</div>
-            <div class="pages"><span>Pages: </span>299</div>
-            <div class="read"><span>Read: </span><input type="checkbox" id="read-checkbox"></div>
-        </div>
-        <div id="card">
-            <div class="title"><span>Title: </span>Title Goes Here</div>
-            <div class="author"><span>Author: </span>Mr. Author</div>
-            <div class="pages"><span>Pages: </span>299</div>
-            <div class="read"><span>Read: </span><input type="checkbox" id="read-checkbox"></div>
-        </div>
-    </div>
-    </main>
-</body>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@400;500;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css" />
+        <script defer src="script.js"></script>
+    </head>
+    <body>
+        <main>
+            <h1>My Book Library</h1>
+            <div>
+                <form class="library-input">
+                    <div class="input-flex">
+                        <label for="title">Title</label>
+                        <input type="text" id="title" name="title">
+                    </div>
+                    <div class="input-flex">
+                        <label for="author">Author</label>
+                        <input type="text" id=" author" name="author">
+                    </div>
+                    <div class="input-flex">
+                        <label for="pages">Pages</label>
+                        <input type="text" id="pages" name="pages">
+                    </div>
+                    <div class="input-flex">
+                        <label for="read" class="read-status">Read Status</label>
+                        <select id="read" name="read">
+                            <option value="read">Read</option>
+                            <option value="not read">Not read</option>
+                        </select>
+                    </div>
+                    <input type="submit" value="Submit" class="submit-button">
+                </form>
+            </div>
+            <div>
+                <table>
+                    <tbody>
+                        <tr>
+                            <th>Title</th>
+                            <th>Author</th>
+                            <th>Pages</th>
+                            <th>Read Status</th>
+                            <th></th>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <!-- <button class="add-book">Add New Book</button>
+            <div id="container">
+                <div id="card">
+                    <div class="title"><span>Title: </span>Title Goes Here</div>
+                    <div class="author"><span>Author: </span>Mr. Author</div>
+                    <div class="pages"><span>Pages: </span>299</div>
+                    <div class="read"><button class="read-button">Read</button></div>
+                </div>
+                <div id="card">
+                    <div class="title"><span>Title: </span>Much Longer Title Goes Here</div>
+                    <div class="author"><span>Author: </span>Mr. Author</div>
+                    <div class="pages"><span>Pages: </span>299</div>
+                    <div class="read"><button class="not-read-button">Not Read</button></div>
+                </div>
+                <div id="card">
+                    <div class="title"><span>Title: </span>Longer Title Goes Here</div>
+                    <div class="author"><span>Author: </span>Mr. Author</div>
+                    <div class="pages"><span>Pages: </span>299</div>
+                    <div class="read"><span>Read: </span><input type="checkbox" id="read-checkbox"></div>
+                </div>
+                <div id="card">
+                    <div class="title"><span>Title: </span>Title Goes Here</div>
+                    <div class="author"><span>Author: </span>Mr. Author</div>
+                    <div class="pages"><span>Pages: </span>299</div>
+                    <div class="read"><span>Read: </span><input type="checkbox" id="read-checkbox"></div>
+                </div> -->
+            <!-- </div> -->
+        </main>
+    </body>
 </html>

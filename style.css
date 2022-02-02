@@ -1,12 +1,13 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 html {
-    background-color:rgb(31, 31, 31);
+    background-color:rgb(240, 240, 240);
     font-size: 100%;
-    font-family: 'Dosis', sans-serif;
+    font-family: 'Ariel', sans-serif;
 }
 
 body {
@@ -14,46 +15,67 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
+    color: darkslategray;
 }
 
 h1 {
-    margin: 20px 0 20px;
+    margin: 20px 0 40px;
     font-size: 42px;
-    color: whitesmoke;
+    font-weight: 300;
 }
 
-span {
-    font-size: 22px;
-    font-weight: 700;
+label {
+    margin-bottom: 5px;
+    font-size: 18px;
 }
 
 input {
-    width: 22px;
-    height: 22px;
+    outline: none;
+    border: none;
+    background-color: rgb(240, 240, 240);
 }
 
-#container {
-    width: 90vw;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 10px;
-}
-
-#card {
-    min-width: 30%;
-    padding: 10px;
-    border: 1px solid rgb(36, 36, 36);
-    border-radius: 10px;
-    background-color: rgb(255, 246, 151);
-    color: rgb(31, 31, 31);
-    text-align: start;
-    flex: 0 0 300px;
-}
-
-.title,
-.author,
-.pages {
-    margin-bottom: 5px;
+input[type=text] {
+    padding: 3px;
     font-size: 20px;
+    border: 1px solid darkslategray;
+    border-radius: 3px;
+}
+
+#pages {
+    width: 100px;
+}
+
+#read {
+    width: 90px;
+    font-size: 16px;
+}
+
+.library-input {
+    display: grid;
+    grid-template-columns: 2fr 2fr 1fr 1fr;
+    align-items: center;
+    column-gap: 20px;
+}
+
+.input-flex {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.read-status {
+    margin-bottom: 10px;
+}
+
+.submit-button {
+    margin: auto 0;
+    width: 100px;
+    height: 35px;
+    background-color: darkslategray;
+    color:rgb(240, 240, 240);
+    font-size: 18px;
+    border-radius: 3px;
+    cursor: pointer;
 }

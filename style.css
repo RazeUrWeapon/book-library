@@ -1,3 +1,9 @@
+:root {
+    --font-color: #1b1b1b;
+    --main-color: #ffe9c7;
+    --alt-color: #e96d71;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -5,23 +11,24 @@
 }
 
 html {
-    background-color:rgb(240, 240, 240);
+    background-color: var(--main-color);
     font-size: 100%;
-    font-family: 'Ariel', sans-serif;
+    font-family: 'M PLUS 1p', sans-serif;
 }
 
 body {
+    height: 100vh;
     display: flex;
     justify-content: center;
-    align-items: center;
-    text-align: center;
-    color: darkslategray;
+    font-size: 20px;
+    color: var(--font-color);
 }
 
 h1 {
     margin: 20px 0 40px;
-    font-size: 42px;
+    font-size: 48px;
     font-weight: 300;
+    text-align: center;
 }
 
 label {
@@ -32,23 +39,52 @@ label {
 input {
     outline: none;
     border: none;
-    background-color: rgb(240, 240, 240);
 }
 
 input[type=text] {
     padding: 3px;
     font-size: 20px;
-    border: 1px solid darkslategray;
+    border: 1px solid var(--font-color);
     border-radius: 3px;
 }
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+th,
+td {
+    text-align: left;
+    border-bottom: 1px solid var(--font-color);
+}
+
+th {
+    padding: 5px 0;
+}
+
+td {
+    padding: 15px 0;
+}
+
 
 #pages {
     width: 100px;
 }
 
 #read {
-    width: 90px;
-    font-size: 16px;
+    width: 120px;
+    height: 38px;
+    background-color: white;
+    border: 1px solid var(--font-color);
+    border-radius: 3px;
+    font-size: 18px;
+    text-align: center;
+}
+
+.input-form {
+    margin-bottom: 80px;
 }
 
 .library-input {
@@ -65,17 +101,38 @@ input[type=text] {
     align-items: start;
 }
 
-.read-status {
-    margin-bottom: 10px;
-}
-
 .submit-button {
     margin: auto 0;
-    width: 100px;
-    height: 35px;
-    background-color: darkslategray;
-    color:rgb(240, 240, 240);
+    width: 125px;
+    height: 45px;
+    background-color: var(--font-color);
+    border: none;
+    border-radius: 4px;
+    color:var(--main-color);
     font-size: 18px;
-    border-radius: 3px;
+    text-transform: uppercase;
     cursor: pointer;
+}
+
+.read {
+    width: 125px;
+    height: 40px;
+    background-color:#a1eb9b;
+    border: none;
+    border-radius: 3px;
+    outline: none;
+    font-size: 18px;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+
+.read.not {
+    background-color: #e96d71;
+}
+
+.delete {
+    padding: 2px 2px;
+    text-decoration: none;
+    color: #eb0202;
+    font-weight: 700;
 }
